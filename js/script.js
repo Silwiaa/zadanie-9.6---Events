@@ -1,13 +1,15 @@
-function checkOnclickEvent() {
-  console.log();
-}
+var button = document.getElementById('addElem'),
+    list = document.getElementById('list');
 
-var list = document.getElementById('list'),
-    add = document.getElementById('addElem');
-
-add.addEventListener('click', function() {
-    var element = document.createElement('li'),
-        itemsByTagName = list.getElementsByTagName('li'),
-    element.innerHTML = ('item' + itemsByTagName.lenght,
-    list.appendChild(element);
+button.addEventListener('click', function() {
+        var newElem = document.createElement('li'),
+            number = document.getElementsByTagName('li');
+    
+        newElem.innerHTML = 'Item ' + number.length;
+        list.appendChild(newElem);
+        
+        console.log(newElem);
 });
+
+
+
